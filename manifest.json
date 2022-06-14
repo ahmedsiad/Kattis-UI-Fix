@@ -16,7 +16,8 @@
                 "https://open.kattis.com/problems/*"
             ],
             "js": [
-                "content_script.js"
+                "content_script.js",
+                "difficulty.js"
             ],
             "css": [
                 "content_script.css"
