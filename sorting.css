@@ -1,0 +1,20 @@
+.extra-button {
+    width: 117px;
+    padding: 10px 12px 10px 12px;
+    font-size: 12px;
+    text-decoration: none !important;
+    border-radius: 3px;
+    color: #fff !important;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    vertical-align: middle;
+    zoom: 1;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: normal;
+    white-space: nowrap;
+    -webkit-user-drag: none;
+    user-select: none;
+    position: relative;
+}
