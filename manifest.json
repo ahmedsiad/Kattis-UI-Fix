@@ -16,10 +16,24 @@
                 "https://open.kattis.com/problems/*"
             ],
             "js": [
-                "content_script.js"
+                "content_script.js",
+                "difficulty.js"
             ],
             "css": [
                 "content_script.css"
+            ],
+            "run_at": "document_idle"
+        },
+        {
+            "matches": [
+                "https://open.kattis.com/problems",
+                "https://open.kattis.com/problems?*"
+            ],
+            "js":[
+                "auth_sorting.js"
+            ],
+            "css":[
+                "sorting.css"
             ],
             "run_at": "document_idle"
         }
