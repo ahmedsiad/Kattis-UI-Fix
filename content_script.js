@@ -1,7 +1,7 @@
 const wrapper = document.getElementsByClassName("l-book")[0];
 const userElem = document.getElementsByClassName("profile_menu-item")[1];
 
-if (window.location.href.split("/").length === 5 && userElem !== undefined) {
+if (window.location.href.split("/").length === 5) {
     // remember editor toggle
     chrome.storage.local.get("editor_off", (data) => {
         if (data && data.editor_off) {
@@ -14,15 +14,19 @@ if (window.location.href.split("/").length === 5 && userElem !== undefined) {
 
     const problemID = window.location.href.split("/").pop();
 
-    const userLink = userElem.href + "/submissions/" + problemID;
-
     const container = document.createElement("div");
     container.className = "my-container";
 
-    const submitButton = document.createElement("a");
-    submitButton.className = "extra-button submit";
-    submitButton.innerHTML = "My Submissions";
-    submitButton.href = userLink;
+    if (userElem !== undefined) {
+        const userLink = userElem.href + "/submissions/" + problemID;
+
+        const submitButton = document.createElement("a");
+        submitButton.className = "extra-button submit";
+        submitButton.innerHTML = "My Submissions";
+        submitButton.href = userLink;
+
+        container.appendChild(submitButton);
+    }
 
     const statisticsButton = document.createElement("a");
     statisticsButton.className = "extra-button statistics";
@@ -52,7 +56,6 @@ if (window.location.href.split("/").length === 5 && userElem !== undefined) {
     const staturl = window.location.href + "/statistics";
     statisticsButton.href = staturl;
 
-    container.appendChild(submitButton);
     container.appendChild(statisticsButton);
     container.appendChild(toggleButton);
 
