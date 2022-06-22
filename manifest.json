@@ -32,6 +32,9 @@
             "js":[
                 "auth_sorting.js"
             ],
+            "css":[
+                "sorting.css"
+            ],
             "run_at": "document_idle"
         }
     ]
