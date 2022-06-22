@@ -21,8 +21,6 @@ if (window.location.href.includes("order=-authtot")){
 auth_tot.appendChild(auth_tot_a);
 sort.appendChild(auth_tot);
 
-
-
 const auth_acc = document.createElement("div");
 const auth_acc_a = document.createElement("a");
 auth_acc_a.innerHTML="Auth Acc.";
@@ -34,8 +32,6 @@ if (window.location.href.includes("order=-authacc")){
 }
 auth_acc.appendChild(auth_acc_a);
 sort.appendChild(auth_acc);
-
-
 
 const auth_rat = document.createElement("div");
 const auth_rat_a = document.createElement("a");
@@ -51,4 +47,3 @@ sort.appendChild(auth_rat);
 
 const block = document.querySelector("body > main > div.l-report_grid > div");
 block.appendChild(sort);
-

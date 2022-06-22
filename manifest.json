@@ -29,11 +29,11 @@
                 "https://open.kattis.com/problems",
                 "https://open.kattis.com/problems?*"
             ],
-            "js":[
+            "js": [
                 "auth_sorting.js"
             ],
-            "css":[
-                "sorting.css"
+            "css": [
+                "auth_sorting.css"
             ],
             "run_at": "document_idle"
         }
