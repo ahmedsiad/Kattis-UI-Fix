@@ -56,9 +56,9 @@ if (window.location.href.split("/").length === 5) {
 
 
         for (let i = 0; i < probs.length;i++){
-            if (probs[i].innerHTML===prob_name){
-                s2.innerHTML = probs_diff[i].innerHTML;
-                const diff_num = s2.innerHTML;
+            if (probs[i].innerHTML === prob_name) {
+                const diff_num = probs_diff[i].innerHTML;
+                s2.innerText = diff_num;
                 const diff_container = document.createElement("span");
 
                 let diff_text = "";
