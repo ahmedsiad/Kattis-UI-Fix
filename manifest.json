@@ -13,7 +13,8 @@
     "content_scripts": [
         {
             "matches": [
-                "https://open.kattis.com/problems/*"
+                "https://open.kattis.com/problems/*",
+                "https://open.kattis.com/contests/*/problems/*"
             ],
             "js": [
                 "content_script.js",
@@ -27,7 +28,9 @@
         {
             "matches": [
                 "https://open.kattis.com/problems",
-                "https://open.kattis.com/problems?*"
+                "https://open.kattis.com/problems?*",
+                "https://open.kattis.com/problem-authors/*",
+                "https://open.kattis.com/problem-sources/*"
             ],
             "js": [
                 "auth_sorting.js"
