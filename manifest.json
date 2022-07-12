@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Kattis UI Fix ",
     "description": "Adds back the old Kattis UI buttons on problem pages as well as a toggle to hide the editor panel.",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "icons": {
         "48": "logo48.png",
         "128": "logo128.png"
@@ -17,8 +17,7 @@
                 "https://open.kattis.com/contests/*/problems/*"
             ],
             "js": [
-                "content_script.js",
-                "difficulty.js"
+                "content_script.js"
             ],
             "css": [
                 "content_script.css"
