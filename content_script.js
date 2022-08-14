@@ -5,7 +5,7 @@ if (window.location.href.split("/").length === 5) {
     // remember editor toggle
     chrome.storage.local.get("editor_off", (data) => {
         if (data && data.editor_off) {
-            const article = document.getElementById("instructions");
+            const article = document.getElementById("instructions-container");
             const editor = article.nextElementSibling;
             editor.style = "display:none;";
             article.style="max-width:1900px;";      
@@ -37,7 +37,7 @@ if (window.location.href.split("/").length === 5) {
     toggleButton.innerHTML = "Toggle Editor";
 
     toggleButton.addEventListener("click", function() {
-        const article = document.getElementById("instructions");
+        const article = document.getElementById("instructions-container");
         const editor = article.nextElementSibling;
         const styles = getComputedStyle(editor);
 
